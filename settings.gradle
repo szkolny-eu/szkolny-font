@@ -1,0 +1,3 @@
+rootProject.name = "SzkolnyFont"
+include ':app'
+include ':szkolny-font'
