@@ -1,11 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext {
-        kotlin_version = "1.4.30"
+        kotlin_version = "1.4.31"
 
         release = [
-                versionName: "5.2.8",
-                versionCode: 50208
+                versionName: "1.1",
+                versionCode: 11
         ]
 
         setup = [

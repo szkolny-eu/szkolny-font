@@ -24,9 +24,10 @@ android {
     defaultConfig {
         minSdkVersion setup.minSdk
         targetSdkVersion setup.targetSdk
+        versionCode release.versionCode
+        versionName release.versionName
+
         consumerProguardFiles 'consumer-proguard-rules.pro'
-        versionCode 11
-        versionName "1.1"
     }
     buildTypes {
         release {
@@ -38,5 +39,5 @@ android {
 
 dependencies {
     implementation "com.mikepenz:iconics-core:5.2.8"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
