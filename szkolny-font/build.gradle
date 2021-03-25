@@ -38,6 +38,6 @@ android {
 }
 
 dependencies {
-    implementation "com.mikepenz:iconics-core:5.2.8"
+    implementation "com.mikepenz:iconics-typeface-api:5.2.8"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
