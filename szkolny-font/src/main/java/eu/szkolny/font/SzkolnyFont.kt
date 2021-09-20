@@ -23,7 +23,7 @@ import java.util.*
 object SzkolnyFont : ITypeface {
 
     override val fontRes: Int
-        get() = R.font.szkolny_font_font_v1_3
+        get() = R.font.szkolny_font_font_v1_4
 
     override val characters: Map<String, Char> by lazy {
         Icon.values().associate { it.name to it.character }
@@ -36,7 +36,7 @@ object SzkolnyFont : ITypeface {
         get() = "SzkolnyFont"
 
     override val version: String
-        get() = "1.3"
+        get() = "1.4"
 
     override val iconCount: Int
         get() = characters.size
@@ -81,7 +81,8 @@ object SzkolnyFont : ITypeface {
 		szf_image_plus_outline('\ue810'),
 		szf_message_processing_outline('\ue811'),
 		szf_notebook_outline('\ue812'),
-		szf_zip_box_outline('\ue813');
+		szf_umbrella_beach_outline('\ue813'),
+		szf_zip_box_outline('\ue814');
 
         override val typeface: ITypeface by lazy { SzkolnyFont }
     }
