@@ -17,13 +17,13 @@ package eu.szkolny.font
 
 import com.mikepenz.iconics.typeface.IIcon
 import com.mikepenz.iconics.typeface.ITypeface
-import java.util.*
+import java.util.LinkedList
 
 @Suppress("EnumEntryName")
 object SzkolnyFont : ITypeface {
 
     override val fontRes: Int
-        get() = R.font.szkolny_font_font_v1_4
+        get() = R.font.szkolnyfont_font_v1_5
 
     override val characters: Map<String, Char> by lazy {
         Icon.values().associate { it.name to it.character }
@@ -36,7 +36,7 @@ object SzkolnyFont : ITypeface {
         get() = "SzkolnyFont"
 
     override val version: String
-        get() = "1.4"
+        get() = "1.5"
 
     override val iconCount: Int
         get() = characters.size
@@ -63,26 +63,33 @@ object SzkolnyFont : ITypeface {
 
     enum class Icon constructor(override val character: Char) : IIcon {
         szf_alarm_bell_outline('\ue800'),
-		szf_calendar_plus_outline('\ue801'),
-		szf_calendar_today_outline('\ue802'),
-		szf_clipboard_list_outline('\ue803'),
-		szf_delete_empty_outline('\ue804'),
-		szf_discord_outline('\ue805'),
-		szf_file_code_outline('\ue806'),
-		szf_file_excel_outline('\ue807'),
-		szf_file_image_outline('\ue808'),
-		szf_file_music_outline('\ue809'),
-		szf_file_pdf_outline('\ue80a'),
-		szf_file_percent_outline('\ue80b'),
-		szf_file_powerpoint_outline('\ue80c'),
-		szf_file_video_outline('\ue80d'),
-		szf_file_word_outline('\ue80e'),
-		szf_github_face('\ue80f'),
-		szf_image_plus_outline('\ue810'),
-		szf_message_processing_outline('\ue811'),
-		szf_notebook_outline('\ue812'),
-		szf_umbrella_beach_outline('\ue813'),
-		szf_zip_box_outline('\ue814');
+		szf_archive('\ue801'),
+		szf_calendar('\ue802'),
+		szf_calendar_plus_outline('\ue803'),
+		szf_calendar_today_outline('\ue804'),
+		szf_clipboard_list_outline('\ue805'),
+		szf_delete_empty_outline('\ue806'),
+		szf_discord_outline('\ue807'),
+		szf_file_code_outline('\ue808'),
+		szf_file_excel_outline('\ue809'),
+		szf_file_image_outline('\ue80a'),
+		szf_file_music_outline('\ue80b'),
+		szf_file_pdf_outline('\ue80c'),
+		szf_file_percent_outline('\ue80d'),
+		szf_file_powerpoint_outline('\ue80e'),
+		szf_file_video_outline('\ue80f'),
+		szf_file_word_outline('\ue810'),
+		szf_forward('\ue811'),
+		szf_github_face('\ue812'),
+		szf_image_plus_outline('\ue813'),
+		szf_message_processing_outline('\ue814'),
+		szf_notebook_outline('\ue815'),
+		szf_reply('\ue816'),
+		szf_sync('\ue817'),
+		szf_sync_error('\ue818'),
+		szf_timetable('\ue819'),
+		szf_umbrella_beach_outline('\ue81a'),
+		szf_zip_box_outline('\ue81b');
 
         override val typeface: ITypeface by lazy { SzkolnyFont }
     }
